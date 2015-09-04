@@ -10,11 +10,15 @@ server.use(restify.bodyParser());
 server.use(restify.authorizationParser());
 
 function respond(req, res, next) {
-	res.send('hello ' + req.params.name);
-	next();
+	if(req.user) {
+		res.send(200, "Authenticated!");
+	} else {
+		res.send('hello ' + req.params.name);
+	}
 }
 
 server.get('/', respond);
+// include access_token in JSON post
 server.post('/login/facebook', auth.isAuthenticated, respond);
 
 exports.start = function () {

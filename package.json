@@ -14,7 +14,7 @@
   "description": "FriendZone Backend",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha"
+    "test": "mocha"
   },
   "keywords": [
 	"friendzone",

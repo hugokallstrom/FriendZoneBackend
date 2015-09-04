@@ -10,8 +10,8 @@ server.use(restify.bodyParser());
 server.use(restify.authorizationParser());
 
 function respond(req, res, next) {
-		  res.send('hello ' + req.params.name);
-		    next();
+	res.send('hello ' + req.params.name);
+	next();
 }
 
 server.get('/', respond);

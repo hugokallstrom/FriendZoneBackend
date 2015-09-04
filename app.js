@@ -14,6 +14,7 @@ function respond(req, res, next) {
 		    next();
 }
 
+server.get('/', respond);
 server.post('/login/facebook', auth.isAuthenticated, respond);
 
 exports.start = function () {

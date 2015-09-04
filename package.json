@@ -1,0 +1,25 @@
+{
+  "name": "FriendZoneBackend",
+  "version": "0.0.0",
+  "dependencies": {
+	"restify": "*",
+	"mongodb": "*",
+	"mongoose": "*",
+	"mocha": "*",
+	"chai": "*",
+	"passport": "*",
+	"passport-http": "*",
+	"supertest": "*"
+  },
+  "description": "FriendZone Backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "keywords": [
+	"friendzone",
+	"backend"
+  ],
+  "author": "Hugo Kallstrom",
+  "license": "ISC"
+}

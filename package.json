@@ -8,7 +8,7 @@
 	"mocha": "*",
 	"chai": "*",
 	"passport": "*",
-	"passport-facebook": "*",
+	"passport-facebook-token": "*",
 	"passport-http": "*",
 	"supertest": "*"
   },
